@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Velvet Vault — a heist game</title>
+<style>
+  html, body { margin: 0; padding: 0; background: #0b0b14; height: 100%; }
+  body { display: flex; align-items: center; justify-content: center; font-family: Georgia, "Times New Roman", serif; }
+  #wrap { position: relative; width: min(96vw, 960px); }
+  canvas { display: block; width: 100%; height: auto; border: 2px solid #6b5a2e; border-radius: 8px; background: #14121f; box-shadow: 0 0 60px rgba(0,0,0,.8); }
+  #help { color: #b8ad8a; text-align: center; font-size: 13px; margin-top: 8px; line-height: 1.5; }
+  #help b { color: #e8d27a; }
+</style>
+</head>
+<body>
+<div id="wrap">
+  <canvas id="game" width="960" height="640"></canvas>
+  <div id="help"><b>WASD / arrows</b> move &nbsp;·&nbsp; <b>Shift</b> sneak &nbsp;·&nbsp; <b>Q</b> smoke pellet (1 use) &nbsp;·&nbsp; <b>R</b> restart &nbsp;·&nbsp; Grab the golden idol, then reach the glowing skylight exit. Stay out of the cones.</div>
+</div>
+<script src="game.js"></script>
+</body>
+</html>
